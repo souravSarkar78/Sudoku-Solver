@@ -4,9 +4,12 @@
 /collected
 /.ipynb_checkpoints
 
+
 # files
 Test_code.ipynb
 suduku1.py
 suduku12.py
 suduku3.py
+utils_test.ipynb
 Augmenter.ipynb
+
