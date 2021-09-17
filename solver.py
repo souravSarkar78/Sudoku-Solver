@@ -41,7 +41,7 @@ def valid(bo, num, pos):
     return True
 
 
-def print_board(bo):
+def get_board(bo):
     if solve(bo):
         return bo
     else:
