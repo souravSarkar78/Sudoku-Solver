@@ -14,7 +14,6 @@ def solve(board):
             if solve(board):
                 return True
             board[row][col] = 0
-
     return False
 
 
@@ -42,13 +41,15 @@ def valid(bo, num, pos):
 
 
 def get_board(bo):
+    """Takes a 9x9 matrix unsolved sudoku board and returns a fully solved board."""
     if solve(bo):
         return bo
     else:
-        return False
+        raise ValueError
 
 
 def find_empty(bo):
+    """checkes where is an empty or unsolved block"""
     for i in range(len(bo)):
         for j in range(len(bo[0])):
             if bo[i][j] == 0:
